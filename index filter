@@ -1,6 +1,6 @@
-index filter =
+index filter = 
 IF(
-	SELECTEDVALUE( 台風データ[time] )　<= SELECTEDVALUE( datetime[quarter] ),
-	1,
-	0
+    SELECTEDVALUE(table2024[datatime]) <= SELECTEDVALUE(table2024[datatime]),
+    1,
+    0
 )
