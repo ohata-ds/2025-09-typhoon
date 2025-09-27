@@ -1,6 +1,4 @@
-index filter = 
-IF(
-    SELECTEDVALUE(table2024[datatime]) <= SELECTEDVALUE(table2024[datatime]),
-    1,
-    0
-)
+IndexFilterFlag = 
+VAR SelectedVal = SELECTEDVALUE('GroupIndexs'[GroupIndex])
+RETURN
+IF(SELECTEDVALUE(table2024[GroupIndex]) <= SelectedVal, 1, 0)
